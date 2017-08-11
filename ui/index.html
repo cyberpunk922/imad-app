@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="/ui/style.css">
   
-  //form hide show jquery
+  //showhide form
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -21,12 +21,17 @@ $(document).ready(function(){
     $("#sgin").click(function(){
         $("#sginfrm").show();
     });
+    
+    $("#clearbod").click(function(){
+        $("#sginfrm").hide();
+    });
+    
 });
 </script>
 
 </head>
 
-<body>
+<body id="clearbod">
 
 <div class="panel" style="display: block;">
 	<h1 class="colchange">WELCOME TO MY  BLOG</h1>
