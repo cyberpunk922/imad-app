@@ -22,7 +22,7 @@ $(document).ready(function(){
         $("#sginfrm").show();
     });
     
-    $("#container").click(function(){
+    $("#closesgin").click(function(){
         $("sginfrm").hide();
     });
     
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
 <div class="sginform" id="sginfrm">
   <form action="">
-      <a href="#" class="close-thik"></a>
+      <a id="closesgin" class="close-thik"></a>
     <input type="email" id="email" name="email" placeholder="email">
     <br />
     <input type="password" id="password" name="password" placeholder="password">
