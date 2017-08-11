@@ -20,6 +20,10 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'particles.js'));
+});
+
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'js', 'apps.js'));
 });
 
