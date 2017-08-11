@@ -24,15 +24,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'js', 'apps.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'apps.js'));
 });
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'js', 'lib', 'stats.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'stats.js'));
 });
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'css', 'style.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
