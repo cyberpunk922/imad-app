@@ -22,6 +22,9 @@ $(document).ready(function(){
         $("#sginfrm").show();
     });
     
+    $("#container").click(function(){
+        $("sginfrm").hide();
+    });
     
 });
 </script>
@@ -29,6 +32,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+    <div id="container">
 
 <div class="panel" style="display: block;">
 	<h1 class="colchange">WELCOME TO MY  BLOG</h1>
@@ -85,6 +89,6 @@ $(document).ready(function(){
     <input type="submit" value="Submit">
   </form>
 </div>
-
+</div>
 </body>
 </html>
