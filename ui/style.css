@@ -92,7 +92,7 @@ canvas{
  }
  
  .panel {
- 	font-family: "Segoe UI";
+ 	font-family: Frutiger;
  font-size:30px;
  	color:#ffffff;
      position: absolute;
@@ -138,6 +138,7 @@ canvas{
  
  .colchange {
      -webkit-animation:colorchange 20s infinite alternate;
+     font-family: Frutiger;
  }
  
  @-webkit-keyframes colorchange {
