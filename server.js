@@ -19,19 +19,19 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui', function (req, res) {
+app.get('/ui/particles.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'particles.js'));
 });
 
-app.get('/ui', function (req, res) {
+app.get('/ui/apps.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'apps.js'));
 });
 
-app.get('/ui', function (req, res) {
+app.get('/ui/stats.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'stats.js'));
 });
 
-app.get('/ui', function (req, res) {
+app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
