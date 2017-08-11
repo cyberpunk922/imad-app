@@ -249,7 +249,7 @@ input[type=submit]:hover {
 
 [class*='close-'] {
   color: #777;
-  font: 20px/100% arial, sans-serif;
+  font: 18px/100% arial, sans-serif;
   position: absolute;
   right: 10px;
   text-decoration: none;
