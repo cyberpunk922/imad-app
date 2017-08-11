@@ -139,3 +139,63 @@ canvas{
 .button3 {background-color: #f44336;} /* Red */ 
 .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
 .button5 {background-color: #555555;} /* Black */
+
+.colorchange {
+    -webkit-animation:colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: #ffffff;
+      }
+      
+      10% {
+        
+        color: #00ff00;
+      }
+      
+      20% {
+        
+        color: #00ffff;
+      }
+      
+      30% {
+        
+        color: #0080ff;
+      }
+      
+      40% {
+        
+        color: #bf00ff;
+      }
+      
+      50% {
+        
+        color: #ff00ff;
+      }
+      
+      60% {
+        
+        color: #ff0000;
+      }
+      
+      70% {
+        
+        color: #ff6600;
+      }
+      80% {
+     
+        color: #ffff00;
+      }
+      
+      90% {
+     
+        color: #bfff00;
+      }
+      
+      100% {
+        
+        color: #00ffff;
+      }
+    }
