@@ -138,7 +138,7 @@ canvas{
  
  .colchange {
      -webkit-animation:colorchange 20s infinite alternate;
-     font-family: Frutiger;
+     
  }
  
  @-webkit-keyframes colorchange {
