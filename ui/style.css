@@ -207,7 +207,7 @@ canvas{
      input[type=email], select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px;
+    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -217,7 +217,7 @@ canvas{
 input[type=password], select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px;
+    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -229,7 +229,7 @@ input[type=submit] {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px;
+    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
