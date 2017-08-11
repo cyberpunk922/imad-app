@@ -1,201 +1,61 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CYBERPUNK BLOG</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="/ui/style.css">
+</head>
+<body>
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
+<div class="panel" style="display: block;">
+	<h1 class="colchange">WELCOME TO MY  BLOG</h1>
 
+	
+</div>
 
-/* =============================================================================
-   My CSS
-   ========================================================================== */
+<!-- count particles 
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+-->
+<!-- particles.js container -->
+<div id="particles-js"></div>
 
-/* ---- base ---- */
+<!-- scripts -->
+<script src="/ui/particles.js"></script>
+<script src="/ui/app.js"></script>
 
-html,body{ 
-	width:100%;
-	height:100%;
-	background:#111;
-}
+<!-- stats.js 
+<script src="/ui/stats.js"></script>
+<script>
 
-html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body{
-  font:normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas{
-  display:block;
-  vertical-align:bottom;
-}
-
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-
-/* ---- particles.js container ---- */
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.panel {
-	font-family: "Segoe UI";
-	font-size:30px;
-	color:#ffffff;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    margin: -100px 0 0 -100px;
-    z-index: 100;
-}
-
-.button {
-    position: absolute;
-    z-index: 100;
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    top: 50%;
-    left: 40%;
-    cursor: pointer;
-}
-.button1 {
-      position: absolute;
-    z-index: 100;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
-    background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */ 
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-.button5 {background-color: #555555;} /* Black */
-
-.colchange {
-    -webkit-animation:colorchange 20s infinite alternate;
-}
-
-@-webkit-keyframes colorchange {
-      0% {
-        
-        color: #ffffff;
-      }
-      
-      10% {
-        
-        color: #00ff00;
-      }
-      
-      20% {
-        
-        color: #00ffff;
-      }
-      
-      30% {
-        
-        color: #0080ff;
-      }
-      
-      40% {
-        
-        color: #bf00ff;
-      }
-      
-      50% {
-        
-        color: #ff00ff;
-      }
-      
-      60% {
-        
-        color: #ff0000;
-      }
-      
-      70% {
-        
-        color: #ff6600;
-      }
-      80% {
-     
-        color: #ffff00;
-      }
-      
-      90% {
-     
-        color: #00ffff;
-      }
-      
-      100% {
-        
-        color: #ffffff;
-      }
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
     }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+-->
+
+
+<input type="button" class="button" value="LOG IN">
+<input type="button" class="button1" value="SIGN IN">
+
+
+</body>
+</html>
