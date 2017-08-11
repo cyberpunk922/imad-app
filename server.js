@@ -23,8 +23,8 @@ app.get('/ui/particles.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'particles.js'));
 });
 
-app.get('/ui/apps.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'apps.js'));
+app.get('/ui/app.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'app.js'));
 });
 
 app.get('/ui/stats.js', function (req, res) {
