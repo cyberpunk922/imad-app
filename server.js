@@ -35,7 +35,7 @@ app.get('/test-db', function (req, res) {
     }
 });
 
-});*/
+});
 
 
 app.get('/ui/style.css', function (req, res) {
