@@ -12,7 +12,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-this is creating error
+//this is creating error
 //var pool = new Pool(config);
 
 var app = express();
