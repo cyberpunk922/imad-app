@@ -6,6 +6,12 @@ var app = express();
 app.use(morgan('combined'));
 
 
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+
 var config = {
     user:'vermaarun922',
     database: 'vermaarun922',
@@ -15,11 +21,6 @@ var config = {
 };
 
 var Pool=new Pool(config);
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 app.get('/test-db', function (req, res) {
     
     pool.query('select * from user', function(err, result){
