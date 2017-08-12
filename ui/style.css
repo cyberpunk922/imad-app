@@ -138,6 +138,7 @@ canvas{
  
  .colchange {
      -webkit-animation:colorchange 20s infinite alternate;
+     font-size:40px;
      
  }
  
