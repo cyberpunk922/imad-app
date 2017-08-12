@@ -213,6 +213,22 @@ canvas{
   display: block;
   clear: both;
 }
+
+     .sgupform {
+         position: absolute;
+     z-index: 100;
+     top:50%;
+     left:50%;
+      border-radius: 5px;
+    background-color: #f2f2f2;
+    width:300px;
+    padding: 20px;
+     }
+     .sgupform:after {
+  content: '';
+  display: block;
+  clear: both;
+}
      
      input[type=email], select {
     width: 100%;
