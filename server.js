@@ -24,18 +24,6 @@ app.get('/', function (req, res) {
 var Pool=new Pool(config);
 
 
-app.get('/test-db', function (req, res) {
-    
-    pool.query('select * from user', function(err, result){
-    if (err){
-        res.status(500).send(err.toString());
-    }
-    else {
-        res.send(JSON.stringify(result));
-    }
-});
-
-});
 
 
 app.get('/ui/style.css', function (req, res) {
