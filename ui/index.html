@@ -27,8 +27,12 @@ $(document).ready(function(){
         $("#sginfrm").hide();
     });
     
-     $("#closesgup").click(function(){
+    $("#sgupfrm").click(function(){
         $("#sgupfrm").hide();
+    });
+    
+     $("#sgup").click(function(){
+        $("#sgupfrm").show();
     });
     
 });
@@ -82,7 +86,7 @@ $(document).ready(function(){
 
 
 <input type="button" id="sgin" class="button" value="LOG IN">
-<input type="button" class="button1" value="SIGN UP">
+<input type="button" id="sgup" class="button1" value="SIGN UP">
 
 <div class="sginform" id="sginfrm">
   <form action="">
