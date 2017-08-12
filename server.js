@@ -7,27 +7,6 @@ app.use(morgan('combined'));
 
 
 
-var config = {
-    user:'vermaarun922',
-    database: 'vermaarun922',
-    host: 'db.imad.hasura-app.io',
-    port: '5432',
-    password: process.env.DB_PASSWORD
-};
-
-var Pool=new Pool(config);
-app.get('/test-db', function (req, res) {
-    
-    pool.query('SELECT * FROM USER', function(err, result){
-    if (err){
-        res.status(500).send(err.toString());
-    }
-    else {
-        res.send(JSON.stringify(result));
-    }
-});
-
-});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
