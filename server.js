@@ -36,10 +36,10 @@ app.get('/test-db', function (req, res) {
     }
     else {
         
-        var abc = JSON.stringify(result);
+        //var abc = JSON.stringify(result);
         //window.aaa = result;
         res.send(result.rows);
-        res.send(abc);
+        //res.send(abc);
     }
 });
 
