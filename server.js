@@ -36,14 +36,10 @@ app.get('/test-db', function (req, res) {
     }
     else {
         
-        // result is json rturned by query result
-        // JSON.stringify will make your json Object to string
-        // fields of JSON Object you can access by result.names, result.fields in this way
-        // but if you make stringify ... it wont be act as object.. it is plain string
         var abc = JSON.stringify(result);
         window.aaa = result;
         res.send(result.rows);
-        res.send(abc.fields);
+        //res.send(abc.fields);
     }
 });
 
